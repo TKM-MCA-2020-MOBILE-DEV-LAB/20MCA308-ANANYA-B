@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#27337A"
+    android:backgroundTint="#37427E"
+    android:foregroundTint="#F3EBEB"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="309dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/download" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_alignParentLeft="false"
+        android:layout_marginTop="23dp"
+        app:srcCompat="@drawable/download3" />
+
+    <TextView
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/imageView2"
+        android:layout_alignBottom="@id/imageView2"
+        android:layout_alignParentBottom="false"
+        android:layout_marginLeft="134dp"
+        android:layout_marginBottom="44dp"
+        android:layout_toRightOf="@id/imageView2"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:inputType="textPersonName"
+        android:text="Ananya"
+        android:textColor="#FAF1F1"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/check1"
+        android:layout_width="217dp"
+        android:layout_height="26dp"
+        android:layout_below="@id/imageView2"
+        android:layout_marginTop="63dp"
+        android:layout_marginBottom="56dp"
+        android:foregroundTint="#F3EBEB"
+        android:text="Log in to another account"
+        android:textColor="#F8F0F0"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:layout_width="217dp"
+        android:layout_height="26dp"
+        android:layout_alignTop="@+id/check1"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="56dp"
+        android:text="Find your account"
+        android:textColor="#FAF5F5"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="72dp"
+        android:background="@color/purple_700"
+        android:backgroundTint="#404D93"
+        android:text="Create new Facebook account"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
